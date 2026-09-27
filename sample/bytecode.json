@@ -1,0 +1,13 @@
+{
+  "budget": 2,
+  "duplicate_error_code": "E_DUPLICATE_FUNCTION",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "verified": [], "rejected": [], "pending": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "task", "name": "f1", "code": [{ "op": "push" }, { "op": "push" }, { "op": "add" }, { "op": "pop" }] },
+    { "id": 2, "kind": "task", "name": "f2", "code": [{ "op": "pop" }] },
+    { "id": 3, "kind": "task", "name": "f3", "code": [{ "op": "push" }, { "op": "jump", "to": 1 }, { "op": "push" }, { "op": "add" }, { "op": "pop" }] },
+    { "id": 4, "kind": "task", "name": "f4", "code": [{ "op": "push" }, { "op": "jump", "to": 9 }] },
+    { "id": 5, "kind": "task", "name": "f5", "code": [{ "op": "push" }, { "op": "jump", "to": 1 }, { "op": "push" }, { "op": "pop" }, { "op": "pop" }] }
+  ]
+}
